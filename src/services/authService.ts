@@ -12,9 +12,7 @@ const googleProvider = new GoogleAuthProvider();
 const facebookProvider = new FacebookAuthProvider();
 
 export const AuthService = {
-  // =========================
-  // LOGIN EMAIL
-  // =========================
+ 
   loginEmail: async (email: string, pass: string) => {
     try {
       const userCredential = await signInWithEmailAndPassword(auth, email, pass);
@@ -24,9 +22,7 @@ export const AuthService = {
     }
   },
 
-  // =========================
-  // REGISTRO (Esta es la que te falta)
-  // =========================
+
   register: async (email: string, pass: string) => {
     try {
       const userCredential = await createUserWithEmailAndPassword(auth, email, pass);
@@ -36,9 +32,7 @@ export const AuthService = {
     }
   },
 
-  // =========================
-  // GOOGLE LOGIN (POPUP)
-  // =========================
+  
   loginWithGoogle: async () => {
     try {
       const result = await signInWithPopup(auth, googleProvider);
@@ -48,9 +42,7 @@ export const AuthService = {
     }
   },
 
-  // =========================
-  // FACEBOOK LOGIN (POPUP)
-  // =========================
+
   loginFacebook: async () => {
     try {
       const result = await signInWithPopup(auth, facebookProvider);
@@ -60,9 +52,7 @@ export const AuthService = {
     }
   },
 
-  // =========================
-  // LOGOUT
-  // =========================
+ 
   logout: async () => {
     await signOut(auth);
   }

@@ -17,14 +17,14 @@ const firebaseConfig = {
   measurementId: "G-7CQZ12GZVV"
 };
 
-// Inicializamos la App
+
 const app = initializeApp(firebaseConfig);
 
-// 🔹 AUTH
+
 export const auth = getAuth(app);
 
-// 🔴 ESTA LÍNEA ES LA CLAVE (NO QUITAR)
+
 setPersistence(auth, browserLocalPersistence);
 
-// 🔹 FIRESTORE
+
 export const db = getFirestore(app);
