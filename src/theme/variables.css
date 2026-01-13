@@ -1,0 +1,33 @@
+/* src/theme/variables.css */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap');
+
+:root {
+  /* Paleta Wayra Kichwa */
+  --ion-color-primary: #8A2BE2; /* BlueViolet */
+  --ion-color-primary-rgb: 138, 43, 226;
+  --ion-color-primary-contrast: #ffffff;
+  --ion-color-primary-contrast-rgb: 255, 255, 255;
+  --ion-color-primary-shade: #7926c7;
+  --ion-color-primary-tint: #9640e5;
+
+  --ion-color-secondary: #667eea;
+  --ion-color-tertiary: #764ba2;
+
+  /* Fuente Global */
+  --ion-font-family: 'Nunito', sans-serif;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+}
+
+/* Fondo con Gradiente Animado */
+.wayra-gradient-bg {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
